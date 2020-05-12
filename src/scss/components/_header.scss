@@ -1,0 +1,12 @@
+.header {
+  background-color: $global-background;
+  text-align: center;
+}
+
+@media (min-width: $breakpoint-medium) {
+  .header .container {    
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+  }
+}

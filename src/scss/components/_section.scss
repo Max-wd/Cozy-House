@@ -1,0 +1,50 @@
+$section-padding-vertical-m:              100px;
+$section-padding-vertical:                $section-padding-vertical-m / 2;
+
+$section-primaty-background:              gray;
+
+.section {
+  padding: 20px 0;
+  position: relative;
+  &-background {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    & > img {
+      height: 100%;
+    }
+  }
+  &-background, 
+  &-overlay {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: rgba(000, 000, 000, 0.6);
+    opacity: 0.85;
+  }  
+  .section-title {
+    font-size: 28px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 410px;
+    letter-spacing: 2.1px;
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+  .section {
+    padding: 60px 0; 
+    .section-title {
+      font-size: 35px;   
+      margin-bottom: 60px;    
+    }   
+  }
+}

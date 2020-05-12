@@ -1,0 +1,38 @@
+@media (min-width: $breakpoint-small) {
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    & > .column {
+      padding: 10px;
+    }
+  }
+  
+  .columns-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+    & > .column {
+      padding: 20px;
+    }
+    > .column:last-child {
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-medium) {
+  .columns {
+    margin: -15px;
+    & > .column {
+      padding: 15px;
+    }
+  }
+
+  .columns-footer {   
+    margin: -50px;
+    & > .column {
+      padding: 50px;
+    }
+  } 
+}

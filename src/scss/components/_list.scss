@@ -1,0 +1,66 @@
+.list {
+  color: #f1cdb3;
+  font-family: "Times New Roman PSMT";
+  list-style-type: none;
+  line-height: 24px; 
+  padding: 0;
+  & > .list-item {
+    padding: 0 0 5px 0;
+    position: relative;
+    padding-left: 40px;    
+  }
+  & > .list-item.list-icon::before {
+    content: "";
+    display: inline-block;    
+    position: absolute;
+    top: 4px;
+    left: 5px;  
+    padding: 0; 
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 18px;
+    width: 26px; 
+  } 
+  & > .list-item.icon-tel::before {
+    background-image: url(../../images/telephone.svg);   
+  }
+  & > .list-item.icon-mail::before {
+    background-image: url(../../images/envelope.svg);   
+  }
+  & > .list-item.icon-pin::before {
+    background-image: url(../../images/pin.svg); 
+  }
+  @media (min-width: $breakpoint-medium) {    
+    & > .list-item {
+      font-size: 20px;
+      padding: 15px 0;    
+      padding-left: 60px;  
+    }    
+    & > .list-item.list-icon::before {    
+      top: 15px;   
+    }     
+    & > .list-item.icon-tel::before {
+      background-image: url(../../images/telephone.svg); 
+      height: 32px;
+      width: 40px; 
+    }    
+    & > .list-item.icon-mail::before {
+      background-image: url(../../images/envelope.svg); 
+      height: 26px;
+      width: 40px; 
+    }    
+    & > .list-item.icon-pin {
+      padding-left: 46px;
+    }    
+    & > .list-item.icon-pin::before {
+      background-image: url(../../images/pin.svg); 
+      height: 36px;
+      width: 26px; 
+      left: 0; 
+      top: 18px;
+    }
+  }  
+}
+
+
+  
